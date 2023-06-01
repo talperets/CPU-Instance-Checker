@@ -18,7 +18,7 @@ app.post("/apitest", (req, res) => {
   const { IP, startTime, endTime, period } = req.body;
 
   const params = {
-    MetricName: "CPU-Utilization",
+    MetricName: "CPUUtilization",
     StartTime: new Date(startTime),
     EndTime: new Date(endTime),
     Period: parseInt(period),
